@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "zaz",
+    "yxy",
+    "yxy"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "y": {
+      "item": "timetyrant:time_shard"
+    },
+    "z": {
+      "item": "minecraft:echo_shard"
+    },
+    "a": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "result": {
+    "item": "minecraft:chiseled_bookshelf",
+    "count": 1
+  }
+}

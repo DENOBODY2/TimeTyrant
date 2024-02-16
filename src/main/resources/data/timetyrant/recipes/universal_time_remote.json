@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "zaz",
+    "yxy",
+    "zaz"
+  ],
+  "key": {
+    "x": {
+      "item": "timetyrant:celestial_time_remote"
+    },
+    "y": {
+      "item": "timetyrant:time_shard"
+    },
+    "z": {
+      "item": "minecraft:shulker_shell"
+    },
+    "a": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "result": {
+    "item": "minecraft:chiseled_bookshelf",
+    "count": 1
+  }
+}

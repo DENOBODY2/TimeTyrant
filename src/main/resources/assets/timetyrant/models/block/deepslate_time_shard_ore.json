@@ -1,0 +1,9 @@
+{
+  "parent": "timetyrant:block/partially_fullbright",
+  "render_type": "cutout",
+  "textures": {
+    "particle": "timetyrant:block/deepslate_time_shard_ore",
+    "base": "timetyrant:block/deepslate_time_shard_ore",
+    "fullbright": "timetyrant:block/deepslate_time_shard_ore_glow"
+  }
+}

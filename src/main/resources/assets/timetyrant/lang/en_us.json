@@ -1,0 +1,16 @@
+{
+  "itemGroup.timetyrant": "Time Tyrant",
+  "cape.timetyrant.timeknight": "Time Knight",
+
+  "message.timetyrant.universal": "Global Tick Rate Modified By %s",
+  "message.timetyrant.cycle": "Tick Multiplier of %s",
+  "message.timetyrant.remote.celestial": "Celestial Tick Rate Modified By %s",
+  "message.timetyrant.unworthy": "Global Tick Rate Changed By %s",
+
+  "block.timetyrant.deepslate_time_shard_ore": "Time Shard Ore",
+
+  "item.timetyrant.time_shard": "Time Shard",
+  "item.timetyrant.debug": "Debug",
+  "item.timetyrant.celestial_time_remote": "Celestial Time Remote",
+  "item.timetyrant.universal_time_remote": "Universal Time Remote"
+}

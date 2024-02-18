@@ -1,26 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "zaz",
-    "yxy",
-    "zaz"
+    " za",
+    "zxz",
+    "yz "
   ],
   "key": {
     "x": {
-      "item": "timetyrant:celestial_time_remote"
+      "item": "minecraft:trident"
     },
     "y": {
-      "item": "timetyrant:time_shard"
+      "item": "minecraft:netherite_ingot"
     },
     "z": {
-      "item": "minecraft:shulker_shell"
+      "item": "timetyrant:time_shard"
     },
     "a": {
       "item": "minecraft:nether_star"
     }
   },
   "result": {
-    "item": "timetyrant:universal_time_remote",
+    "item": "timetyrant:tyrant_bolt",
     "count": 1
   }
 }

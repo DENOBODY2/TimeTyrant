@@ -12,5 +12,11 @@
   "item.timetyrant.time_shard": "Time Shard",
   "item.timetyrant.debug": "Debug",
   "item.timetyrant.celestial_time_remote": "Celestial Time Remote",
-  "item.timetyrant.universal_time_remote": "Universal Time Remote"
+  "item.timetyrant.universal_time_remote": "Universal Time Remote",
+
+  "item.timetyrant.tyrant_bolt": "Tyrant's Bolt",
+  "entity.timetyrant.thrown_tyrant_bolt": "Tyrant's Bolt",
+  "enchantment.timetyrant.wrath_of_the_time_god": "Wrath of The Time God",
+  "enchantment.timetyrant.striking": "Striking",
+  "enchantment.timetyrant.explosion": "Explosion"
 }

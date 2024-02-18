@@ -1,9 +1,7 @@
 package net.denobody2.timetyrant;
 
 import com.mojang.logging.LogUtils;
-import net.denobody2.timetyrant.registry.ModBlocks;
-import net.denobody2.timetyrant.registry.ModCreativeTabs;
-import net.denobody2.timetyrant.registry.ModItems;
+import net.denobody2.timetyrant.registry.*;
 import net.denobody2.timetyrant.util.ModPlayerCapes;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -22,6 +20,7 @@ public class TimeTyrant
 {
     //Todo
     //textures, look for bugs
+    //model and texture for bolt
 
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "timetyrant";
@@ -40,7 +39,9 @@ public class TimeTyrant
         ModItems.ITEMS.register(modEventBus);
         ModBlocks.BLOCKS.register(modEventBus);
         ModCreativeTabs.CREATIVE_MODE_TABS.register(modEventBus);
-
+        ModEnchantments.ENCHANTMENTS.register(modEventBus);
+        ModEntities.ENTITIES.register(modEventBus);
+        ModLootModifiers.LOOT_MODIFIER_SERIALIZERS.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)

@@ -29,7 +29,7 @@ public class TimeTyrant
     //Todo
     //textures, look for bugs
     //model and texture for bolt
-    //fix ore spawning
+
 
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "timetyrant";

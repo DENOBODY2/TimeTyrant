@@ -24,8 +24,7 @@ public class ModPlacedFeatures {
 
 
         register(context, DEEPSLATE_TIME_SHARD_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.DEEPSLATE_TIME_SHARD_ORE_KEY),
-                ModOrePlacement.orePlacement(CountPlacement.of(4),
-                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(-18))));
+                ModOrePlacement.commonOrePlacement(9, HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(-12))));
 
 
 

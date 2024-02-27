@@ -19,7 +19,7 @@ public class ModItems {
             () -> new UniversalTimeRemoteItem(new Item.Properties().fireResistant().stacksTo(1)));
     public static final RegistryObject<Item> TIME_SHARD = ITEMS.register("time_shard",
             () -> new Item(new Item.Properties().fireResistant()));
-    public static final RegistryObject<Item> TYRANT_BOLT = ITEMS.register("tyrant_bolt", ()-> new TyrantBoltItem(new Item.Properties().stacksTo(1).fireResistant().durability(2000)));
+    public static final RegistryObject<Item> TYRANT_BOLT = ITEMS.register("tyrant_bolt", ()-> new TyrantBoltItem(new Item.Properties().stacksTo(1).fireResistant().durability(3000)));
 
 
     public static void register(IEventBus eventBus){

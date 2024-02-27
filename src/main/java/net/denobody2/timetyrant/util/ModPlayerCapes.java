@@ -12,7 +12,8 @@ public class ModPlayerCapes {
     private static final ResourceLocation TIME_KNIGHT_CAPE = new ResourceLocation(TimeTyrant.MOD_ID, "textures/entity/cape/time_knight.png");
     private static final List<UUID> DEVS = List.of(
             UUID.fromString("380df991-f603-344c-a090-369bad2a924a"), /*Dev*/
-            UUID.fromString("3562ab33-f01b-4801-aab5-807f3750ded1") /*AbysswalkerDeno*/
+            UUID.fromString("3562ab33-f01b-4801-aab5-807f3750ded1"), /*AbysswalkerDeno*/
+            UUID.fromString("cf6cdaba-1b84-42cc-ac78-24b1569abd3f") /*Icy_Craby*/
     );
 
     public static void setup() {

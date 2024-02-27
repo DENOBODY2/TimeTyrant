@@ -64,7 +64,7 @@ public class TyrantBoltItem extends Item implements Vanishable {
                         p_43388_.broadcastBreakEvent(pEntityLiving.getUsedItemHand());
                     });
                     ThrownTyrantBolt throwntrident = new ThrownTyrantBolt(pLevel, player, pStack);
-                    throwntrident.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 2.5F * 0.6F, 0.6F);
+                    throwntrident.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 2.5F, 0.6F);
                     if (player.getAbilities().instabuild) {
                         throwntrident.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
                     }

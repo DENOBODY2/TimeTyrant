@@ -1,0 +1,10 @@
+{
+  "type": "timetyrant:add_trident",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:entities/elder_guardian"
+    }
+  ],
+  "item": "minecraft:trident"
+}

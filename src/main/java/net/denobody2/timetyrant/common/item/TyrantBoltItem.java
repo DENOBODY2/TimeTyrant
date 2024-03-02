@@ -25,14 +25,14 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
 
-public class TyrantBoltItem extends Item implements Vanishable {
+public class TyrantBoltItem extends SwordItem implements Vanishable {
     public static final int THROW_THRESHOLD_TIME = 9;
     public static final float BASE_DAMAGE = 8.0F;
     public static final float SHOOT_POWER = 2.5F;
     private final Multimap<Attribute, AttributeModifier> defaultModifiers;
 
-    public TyrantBoltItem(Item.Properties pProperties) {
-        super(pProperties);
+    public TyrantBoltItem(Tier pTier, int pAttackDamageModifier, float pAttackSpeedModifier, Properties pProperties) {
+        super(pTier, pAttackDamageModifier, pAttackSpeedModifier, pProperties);
         ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
         builder.put(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Tool modifier", 9.0D, AttributeModifier.Operation.ADDITION));
         builder.put(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Tool modifier", (double)-2.8F, AttributeModifier.Operation.ADDITION));
@@ -91,6 +91,11 @@ public class TyrantBoltItem extends Item implements Vanishable {
         pStack.hurtAndBreak(1, pAttacker, (p_43414_) -> {
             p_43414_.broadcastBreakEvent(EquipmentSlot.MAINHAND);
         });
+        if(pTarget instanceof Player player){
+            if(player.isBlocking()){
+                player.disableShield(true);
+            }
+        }
         return true;
     }
 
@@ -115,7 +120,7 @@ public class TyrantBoltItem extends Item implements Vanishable {
      * Return the enchantability factor of the item, most of the time is based on material.
      */
     public int getEnchantmentValue() {
-        return 1;
+        return 30;
     }
 
     @Override
@@ -136,7 +141,7 @@ public class TyrantBoltItem extends Item implements Vanishable {
             lightningbolt.setCause(entity1 instanceof ServerPlayer ? (ServerPlayer)entity1 : null);
             level.addFreshEntity(lightningbolt);
             soundevent = SoundEvents.TRIDENT_THUNDER;
-            player.getCooldowns().addCooldown(this, 20);
+            player.getCooldowns().addCooldown(this, 80);
         }
         player.playSound(soundevent, f1, 1.0F);
     }
